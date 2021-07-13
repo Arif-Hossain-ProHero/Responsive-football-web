@@ -27,6 +27,9 @@ body {
   line-height: 80px;
   margin-bottom: 20px;
 }
+#and {
+  color: #d03a00;
+}
 .watch-btn {
   background-color: #e02c6d;
   padding: 10px 24px;
@@ -57,7 +60,8 @@ body {
 .player-container {
   width: 1040px;
   margin: auto;
-  box-shadow: 0 4px 19px 0 rgb(0 0 0 / 20%), 0 28px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 0 2px 19px 0 rgb(0 0 0 / 20%), 0 12px 20px 0 rgb(0 0 0 / 19%);
+  margin-bottom: 150px;
 }
 .players {
   display: grid;
@@ -82,4 +86,47 @@ body {
   color: #6c6c6c;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* ----------footer section------------ */
+footer {
+  border-top: 2px solid rgb(177, 173, 173);
+}
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  width: 485px;
+  margin: 25px auto;
+}
+.logo > img {
+  width: 485px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+}
+/* social link */
+.social-link > a {
+  padding: 0 12px;
+}
+.social-link a > i {
+  font-size: 32px;
+  color: #464444;
+  transition: 0.4s;
+}
+.fa-facebook-square:hover {
+  color: #1095ed;
+}
+.fa-twitter-square:hover {
+  color: #5da9dd;
+}
+.fa-instagram-square:hover {
+  color: #ce2857;
+}
+.fa-youtube:hover {
+  color: #f60000;
+}
+.copyright {
+  text-align: center;
 }
