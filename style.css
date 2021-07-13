@@ -1,0 +1,44 @@
+/* Common styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------header styles -------------*/
+.header-container {
+  background-color: #2d25a0;
+}
+.header-section {
+  display: flex;
+  justify-content: center;
+  padding: 130px 80px 40px 150px;
+}
+.header-text h1 {
+  color: white;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+.watch-btn {
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.watch-btn:hover {
+  background-color: #bd0649;
+}
+.arrow-icon {
+  margin-left: 5px;
+}
+.header-banner img {
+  width: 560px;
+  transition: 0.8s;
+}
+.header-banner > img:hover {
+  transform: scale(1.1);
+}
