@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 .btn {
   background-color: #e02c6d;
@@ -251,7 +252,7 @@ footer {
   .header-banner img {
     width: 80%;
   }
-  /* Responsive for players section <mobile> */
+  /* mobile version of players section <mobile> */
   .player-container {
     margin: 0;
   }
@@ -266,7 +267,7 @@ footer {
   .player-img img {
     width: 100%;
   }
-  /* Responsive for News section <mobile> */
+  /* mobile version of News section <mobile> */
   .news-container {
     max-width: 97%;
   }
@@ -284,7 +285,7 @@ footer {
     width: 92%;
     padding: 10px;
   }
-  /* upcoming match responsive mobile */
+  /* mobile version of upcoming match section  */
   .matches {
     flex-direction: column;
   }
@@ -292,6 +293,73 @@ footer {
     margin: 10px auto;
   }
   .logo img {
+    width: 80%;
+  }
+}
+
+/* -----------Media query for Tablet version----------- */
+@media only screen and (min-width: 688px) and (max-width: 991px) {
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .header-text {
+    width: 45%;
+  }
+  .header-text h1 {
+    font-size: 48px;
+  }
+  .header-banner {
+    margin-top: 20px;
+    width: 45%;
+  }
+  .header-banner img {
+    width: 100%;
+  }
+  /* Player section for tablet version */
+  .player-container,
+  .players {
+    width: 100%;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .player {
+    width: 80%;
+    margin-left: 20px;
+  }
+  /* tablet version of upcoming match section*/
+  .match-container {
+    width: 100%;
+  }
+  .matches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .match {
+    margin-bottom: 10px;
+  }
+  /* tablet version of Latest news Section */
+  .news-container,
+  .news-img img {
+    width: 100%;
+  }
+  .news-img {
+    width: 40%;
+  }
+  .news-detail {
+    width: 45%;
+  }
+  /* tablet version of footer */
+  .footer-section {
+    width: 100%;
+  }
+  .logo > img {
     width: 80%;
   }
 }
