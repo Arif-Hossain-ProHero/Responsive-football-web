@@ -7,7 +7,18 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-
+.btn {
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #bd0649;
+}
 /* ------header styles -------------*/
 .header-container {
   background-color: #2d25a0;
@@ -30,18 +41,7 @@ body {
 #and {
   color: #d03a00;
 }
-.watch-btn {
-  background-color: #e02c6d;
-  padding: 10px 24px;
-  border: none;
-  color: white;
-  font-weight: 400;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.watch-btn:hover {
-  background-color: #bd0649;
-}
+
 .arrow-icon {
   margin-left: 5px;
 }
@@ -61,7 +61,7 @@ body {
   width: 1040px;
   margin: auto;
   box-shadow: 0 2px 19px 0 rgb(0 0 0 / 20%), 0 12px 20px 0 rgb(0 0 0 / 19%);
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .players {
   display: grid;
@@ -86,6 +86,38 @@ body {
   color: #6c6c6c;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* ------------styles for news-section-------- */
+.news-container > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.news-img {
+  width: 30%;
+  margin-right: 2%;
+  overflow: hidden;
+}
+.news-img img {
+  width: 100%;
+  transition: 0.4s;
+}
+.news-img > img:hover {
+  transform: scale(1.1);
+}
+.news-detail {
+  width: 40%;
+  margin-right: 3%;
+}
+.news-heading {
+  border-bottom: 2px solid black;
 }
 
 /* ----------footer section------------ */
